@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .navbar{
+     background-color:aqua;
+    display: flex;
+    float:right;
+    padding: 20px;
+    
+
+}
+.h{
+    margin-right: 30pt;
+    padding: 5px;
+
+}
+.n{
+    margin-right: 30pt;
+    padding: 5px;
+ 
+}
+.m{
+    margin-right: 30pt;
+    padding: 5px;
+ 
+}
+.pic{
+    
+    float: left;
+    margin-top: 10%;
+
+}
+
+p{
+ float: right;
+ margin-top: 10%;
+ margin-left: 10px;
+
+}
+#a{
+    position: fixed;
+    display: none;
+}
+#b{
+    position: fixed;
+    display: none;
+
+}
+.img{
+float: left;
+margin-top: 10%;
+
+}
+
+span{
+    float: right;
+    margin-top: 20%;
+    margin-left: 200px;
+}
+   </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="h" ><button type="button" onclick="my()">History</button></div>
+        <div class="n" ><button type="button" onclick="ny()">vision</button></div>
+        <div class="m" ><button type="button">Goals</button></div>
+         
+    </div>
+    <div id="a">
+        <div class="pic"><img src="nilsagor.jpg">
+<p>i love my Country</p>
+        </div>
+    </div>
+    <div id="b">
+        <div class="img"><img src="jerry.jpeg"></div>
+        <span>i love jerry</span>
+    </div>
+    <script>
+        function my(){
+            document.getElementById("a").style.display = 'block';
+            document.getElementById("b").style.display= 'none';
+
+        }
+        function ny(){
+            
+            document.getElementById("b").style.display= 'block';
+            document.getElementById("a").style.display= 'none';
+        }
+    </script>
+
+</body>
+</html>
